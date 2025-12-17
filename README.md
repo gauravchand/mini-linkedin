@@ -1,6 +1,7 @@
 # Mini LinkedIn
 
-A simplified version of LinkedIn built with React, TypeScript, and Supabase. This project implements core social networking features like user profiles, posts, and connections.
+A simplified version of LinkedIn built with React, TypeScript, and Supabase. This project implements core social networking features like user profiles, posts, and connections. 
+## Link: **https://linkedin-mini-two.vercel.app/**
 
 ## 🚀 Features
 
