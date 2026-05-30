@@ -114,10 +114,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         if (profileError) throw profileError;
       }
     } catch (error) {
-      setLoading(false);
-      throw error;
-    }
-  };
+      setLoading(false);  // ✅ On error
+    throw error;
+  } finally {
+    setLoading(false);  // ✅ Always reset (on success too)
+  }
+};
 
   const signIn = async (email: string, password: string) => {
   setLoading(true);
